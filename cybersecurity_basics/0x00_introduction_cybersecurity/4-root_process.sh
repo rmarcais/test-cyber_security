@@ -1,2 +1,2 @@
 #!/bin/bash
-ps aux | grep -v " 0 *0" | grep "^$1"
+ps aux -u $1 | grep -v " 0 *0"
